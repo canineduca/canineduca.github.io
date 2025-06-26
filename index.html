@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiestramiento Canino en Granada - CaninEduca - Educando desde la emoción y el respeto</title>
+    <meta name="description" content="Adiestramiento canino con enfoque cognitivo-emocional. Mejora la relación con tu perro, respetando su individualidad y emociones.">
+    <meta name="keywords" content="adiestramiento canino, educación canina, perro, emociones, respeto, obediencia, modificación de conducta, cachorros">
+    <meta name="author" content="José Luis Maldonado Sánchez">
+    <link rel="canonical" href="https://canineduca.github.io">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        /* --- Paleta de Colores Azul --- */
+        :root {
+            --azul-oscuro: #0d2b4e;
+            --azul-claro: #eaf4ff;
+            --azul-acento: #4a7bb3;
+            --gris-claro: #f0f4f8;
+            --texto-oscuro: #333;
+            --texto-claro: #555;
+            --blanco: white;
+            --sombra: rgba(0,0,0,0.1);
+        }
+
+        /* --- Estilos generales --- */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--texto-oscuro);
+            background-color: #f9f9f9;
+            scroll-behavior: smooth;
+        }
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* --- Cabecera --- */
+        header {
+            background: var(--azul-claro);
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 5px var(--sombra);
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .logo {
+            width: 250px;
+            height: 125px;
+            background: transparent;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        /* Estilos para la imagen dentro del logo */
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        
+        .site-title {
+            color: var(--azul-oscuro);
+            margin: 0;
+            font-size: 7rem;
+            letter-spacing: 2px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .contacto-header {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: var(--gris-claro);
+            padding: 15px;
+            border-radius: 8px;
+            min-width: 250px;
+        }
+        .contacto-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--azul-oscuro);
+            font-size: 1.1rem;
+        }
+        .contacto-item i {
+            color: var(--azul-acento);
+            font-size: 1.3rem;
+        }
+        .contacto-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        /* --- Menú --- */
+        nav {
+            background: var(--azul-oscuro);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 25px;
+        }
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        nav a:hover, nav a.active {
+            background: var(--azul-acento);
+            transform: translateY(-2px);
+        }
+
+        /* Estilos específicos para el logo de AEPEJU en el menú (no usado en este HTML, pero se mantiene) */
+        nav .aepeju-link img {
+            height: 24px;
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+        
+        /* --- Portada (Hero) --- */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--blanco);
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 1000px;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 4.8rem;
+            margin-bottom: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 3px;
+        }
+        .hero h3 {
+            font-size: 2.5rem;
+            margin: 1rem 0 2rem 0;
+            color: var(--blanco);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: 300;
+        }
+        .hero p {
+            font-size: 1.56rem;
+            font-weight: bold;
+            line-height: 1.8;
+            margin: 2rem auto;
+            max-width: 800px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        /* --- Secciones --- */
+        section {
+            padding: 5rem 0;
+        }
+        section h2 {
+            text-align: center;
+            color: var(--azul-oscuro);
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            letter-spacing: 1px;
+        }
+        
+        /* --- Servicios --- */
+        .servicios {
+            background: var(--gris-claro);
+        }
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        /* Estilo para el contenedor de la tarjeta */
+        .servicio-card {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: var(--blanco);
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 3px 15px var(--sombra);
+            transition: all 0.3s;
+            cursor: default;
+        }
+        
+        .servicio-card .card-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            z-index: 3;
+        }
+
+        /* Contenedor para centrar el icono encima del título */
+        .icon-container {
+            text-align: center;
+        }
+        /* Estilo para los iconos dentro del nuevo contenedor */
+        .icon-container i {
+            font-size: 3.5rem;
+            color: var(--azul-acento);
+            margin-bottom: 20px;
+        }
+        
+        .servicio-card h3 {
+            color: var(--azul-oscuro);
+            margin-top: 0;
+            border-bottom: 2px solid var(--azul-acento);
+            padding-bottom: 15px;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+        .servicio-card p {
+            color: var(--texto-claro);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+        
+        /* Efecto hover en la tarjeta */
+        .servicio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        /* --- Sobre Mí --- */
+        .sobre-mi {
+            background: var(--blanco);
+        }
+        .sobre-mi-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px var(--sombra);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        /* Estilo para la foto de perfil */
+        .profile-pic-container {
+            margin-bottom: 30px;
+        }
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid var(--gris-claro);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .sobre-mi-content h3 {
+            color: var(--azul-oscuro);
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 2.5rem;
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
+        .sobre-mi-content p {
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            color: #444;
+            font-size: 1.1rem;
+        }
+
+        /* --- Sección de Contacto (Tarjeta) --- */
+        .contacto-section {
+            background: var(--azul-claro);
+            text-align: center;
+        }
+        .contacto-card-inline {
+            background: var(--blanco);
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px var(--sombra);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contacto-card-inline h3 {
+            color: var(--azul-oscuro);
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--azul-acento);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .contacto-card-inline .contacto-item {
+            font-size: 1.4rem;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .contacto-card-inline .contacto-item:last-child {
+            border-bottom: none;
+        }
+        .contacto-card-inline .contacto-item i {
+            font-size: 1.8rem;
+            color: var(--azul-acento);
+        }
+        .contacto-card-inline .contacto-item a {
+            color: var(--azul-oscuro);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+        .contacto-card-inline .contacto-item a:hover {
+            color: var(--azul-acento);
+        }
+        
+        /* --- Footer --- */
+        footer {
+            background: var(--azul-oscuro);
+            color: var(--blanco);
+            text-align: center;
+            padding: 3rem 0;
+        }
+        footer p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        /* Estilo para el contenedor del logo del footer */
+        .footer-logo-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 250px;
+        }
+        .footer-logo-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .legal-links {
+            margin-top: 25px;
+        }
+        .legal-links span {
+            color: var(--azul-acento);
+            margin: 0 15px;
+            font-size: 1rem;
+            display: inline-block;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+        .legal-links span:hover {
+            color: var(--blanco);
+            text-decoration: underline;
+        }
+        
+        /* --- Banner de Cookies (MODIFICADO para ser un modal grande) --- */
+        #cookies-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            padding: 20px;
+            box-sizing: border-box;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            animation: fadeIn 0.5s ease-out;
+        }
+        .cookies-banner-content {
+            background-color: var(--blanco);
+            color: var(--texto-oscuro);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .cookies-banner-content p {
+            margin: 0;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        .cookies-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .cookies-buttons button {
+            background-color: var(--azul-acento);
+            color: var(--azul-oscuro);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            flex: 1 1 150px;
+            max-width: 200px;
+        }
+        .cookies-buttons button:hover {
+            background-color: #6aabc9;
+            transform: translateY(-2px);
+        }
+        #rechazar-cookies {
+            background-color: #e74c3c;
+            color: var(--blanco);
+        }
+        #rechazar-cookies:hover {
+            background-color: #c0392b;
+        }
+
+        /* Animación para aparecer */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        /* --- Modal de Configuración de Cookies --- */
+        .cookies-config-modal {
+            display: none;
+            position: fixed;
+            z-index: 10001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.6);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            padding-top: 50px;
+        }
+        .cookies-config-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        .cookies-config-content h3 {
+            text-align: center;
+            margin-top: 0;
+            color: var(--texto-oscuro);
+        }
+        .cookies-config-content .cookie-group {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .cookies-config-content .cookie-group:last-child {
+            border-bottom: none;
+        }
+        .cookies-config-content .cookie-group h4 {
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--texto-claro);
+        }
+        .cookies-config-content .cookie-group p {
+            margin: 5px 0 0 0;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .cookies-config-content .cookie-group .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 24px;
+        }
+        .cookies-config-content .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .cookies-config-content .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 24px;
+        }
+        .cookies-config-content .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: var(--blanco);
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+        .cookies-config-content input:checked + .slider {
+            background-color: var(--azul-acento);
+        }
+        .cookies-config-content input:checked + .slider:before {
+            transform: translateX(16px);
+        }
+        .close-modal {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-modal:hover,
+        .close-modal:focus {
+            color: #000;
+            text-decoration: none;
+        }
+        .modal-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* --- Estilos para los nuevos modales de políticas --- */
+        .policy-modal {
+            display: none;
+            position: fixed;
+            z-index: 10002; /* Un z-index más alto para estar sobre el de cookies */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            padding-top: 50px;
+        }
+        .policy-modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 40px;
+            border: 1px solid #888;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        .policy-modal-content h1, .policy-modal-content h2 {
+            color: var(--azul-oscuro);
+            text-align: center;
+            border-bottom: 2px solid var(--azul-acento);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .policy-modal-content p, .policy-modal-content ul {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--texto-claro);
+        }
+        .policy-modal-content ul {
+            padding-left: 20px;
+        }
+        .policy-modal-content li {
+            margin-bottom: 10px;
+        }
+        .policy-modal-content .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        
+        /* --- Responsive --- */
+        @media (max-width: 992px) {
+            .container {
+                width: 90%;
+            }
+            .site-title {
+                font-size: 4.5rem;
+            }
+            .hero h1 {
+                font-size: 4.5rem;
+            }
+            .hero h3 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            .logo {
+                width: 180px;
+                height: 90px;
+                border: none;
+            }
+            .logo img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            .site-title {
+                font-size: 2rem;
+            }
+            .contacto-header {
+                width: 100%;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            nav a {
+                padding: 5px 10px;
+                font-size: 1.1rem;
+            }
+            nav .aepeju-link img {
+                height: 20px;
+            }
+            .hero {
+                height: 500px;
+            }
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            .hero h3 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .hero .destacado a img {
+                height: 2em;
+            }
+            section {
+                padding: 4rem 0;
+            }
+            section h2 {
+                font-size: 2.5rem;
+            }
+            .contacto-card-inline {
+                padding: 30px;
+            }
+            .contacto-card-inline h3 {
+                font-size: 1.5rem;
+            }
+            .contacto-card-inline .contacto-item {
+                font-size: 1.2rem;
+            }
+            footer .footer-logo-container {
+                max-width: 120px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .hero h3 {
+                font-size: 1.5rem;
+            }
+            .servicios-grid {
+                grid-template-columns: 1fr;
+            }
+            .sobre-mi-content {
+                padding: 30px;
+            }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S49BGPC3FZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // CONFIGURACIÓN INICIAL DE GOOGLE ANALYTICS CON CONSENTIMIENTO
+      gtag('config', 'G-S49BGPC3FZ', { 'anonymize_ip': true, 'send_page_view': false });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="logo-canineduca.jpg" alt="Logo de CaninEduca: un perro y una persona abrazándose">
+                    </div>
+                    <span class="site-title">CaninEduca</span>
+                </div>
+                <div class="contacto-header">
+                    <div class="contacto-item">
+                        <i class="fas fa-phone"></i>
+                        <span><a href="tel:+34657992675">657 99 26 75</a></span>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span><a href="https://wa.me/34657992675" target="_blank">WhatsApp</a></span>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:jose.luis.ms@hotmail.es">jose.luis.ms@hotmail.es</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#inicio" class="active">INICIO</a></li>
+                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>ADIESTRADOR CANINO</h1>
+            <h3>GRANADA</h3>
+            <p>«CONECTA, COMPRENDE Y CRECE JUNTO A TU PERRO».</p>
+        </div>
+    </section>
+    
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2>SERVICIOS</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <h3>Educación y Socialización para Cachorros</h3>
+                        <p>Socialización y aprendizaje temprano para cachorros, favoreciendo su desarrollo equilibrado desde el primer día.</p>
+                    </div>
+                </div>
+                <div class="servicio-card">
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Adiestramiento Canino en Positivo</h3>
+                        <p>Modificación de conductas problemáticas, aplicando técnicas respetuosas, basadas en el refuerzo positivo.</p>
+                    </div>
+                </div>
+                <div class="servicio-card">
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <i class="fas fa-house-user"></i>
+                        </div>
+                        <h3>Mejora del Vínculo y Bienestar Familiar</h3>
+                        <p>Fortalecimiento del vínculo y la comunicación entre perro y familia, promoviendo la convivencia armoniosa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="container">
+            <h2>SOBRE MÍ</h2>
+            <div class="sobre-mi-content">
+                <div class="profile-pic-container">
+                    <img src="logocircular.jpg" alt="Foto de perfil del adiestrador" class="profile-pic">
+                </div>
+                <h3>"Creciendo en Manada: Toda una Vida Dedicada al Bienestar Canino"</h3>
+                <p>Desde que tengo uso de razón, he convivido con perros como parte de mi familia, creciendo en una auténtica manada que me enseñó a comprender su lenguaje y necesidades desde niño. A lo largo de mi vida, he volcado toda esa experiencia y dedicación en el mundo del adiestramiento y la educación canina. Mi trayectoria personal me permite aportar un enfoque único, basado en el respeto, la empatía y un profundo conocimiento del comportamiento canino, forjado a lo largo de toda una vida junto a los perros</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto-section">
+        <div class="container">
+            <h2>CONTACTO</h2>
+            <div class="contacto-card-inline">
+                <h3>Contacta con nosotros</h3>
+                <div class="contacto-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+34657992675">657 99 26 75</a>
+                </div>
+                <div class="contacto-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/34657992675" target="_blank">Enviar WhatsApp</a>
+                </div>
+                <div class="contacto-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jose.luis.ms@hotmail.es">jose.luis.ms@hotmail.es</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-logo-container">
+                <img src="CaninEduca.gif" alt="Un perro animado moviendo la cola y guiñando un ojo">
+            </div>
+            <div class="legal-links">
+                <span id="aviso-legal-trigger">Aviso Legal</span>
+                <span id="privacidad-trigger">Política de Privacidad</span>
+                <span id="cookies-trigger">Cookies</span>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="cookies-banner">
+        <div class="cookies-banner-content">
+            <p>Usamos cookies propias y de terceros para fines analíticos y para mostrarte publicidad personalizada.</p>
+            <div class="cookies-buttons">
+                <button id="aceptar-cookies">Aceptar todo</button>
+                <button id="rechazar-cookies">Rechazar</button>
+                <button id="configurar-cookies">Configurar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookies-config-modal" class="cookies-config-modal">
+        <div class="cookies-config-content">
+            <span class="close-modal">&times;</span>
+            <h3>Configuración de Cookies</h3>
+            <p style="font-size: 0.9rem; color: #666; text-align: left;">Puedes ajustar tus preferencias para cada tipo de cookie a continuación. Ten en cuenta que bloquear algunas categorías puede afectar tu experiencia en el sitio.</p>
+            
+            <div class="cookie-group">
+                <h4>Cookies Necesarias <span style="color: green; font-size: 0.9rem;">(Siempre activas)</span></h4>
+                <p>Estas cookies son esenciales para el funcionamiento del sitio web y no se pueden desactivar. Normalmente, solo se activan en respuesta a acciones realizadas por ti que equivalen a una solicitud de servicios, como establecer tus preferencias de privacidad.</p>
+            </div>
+
+            <div class="cookie-group">
+                <h4>Cookies de Análisis o Rendimiento</h4>
+                <p>Estas cookies nos permiten contar las visitas y las fuentes de tráfico para poder medir y mejorar el rendimiento de nuestro sitio. Nos ayudan a saber qué páginas son las más o menos populares y cómo se mueven los visitantes por el sitio.</p>
+                <label class="switch">
+                    <input type="checkbox" id="analytics-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="cookie-group">
+                <h4>Cookies de Publicidad o Marketing</h4>
+                <p>Estas cookies pueden ser establecidas a través de nuestro sitio por nuestros socios publicitarios. Pueden ser utilizadas por esas empresas para crear un perfil de tus intereses y mostrarte anuncios relevantes en otros sitios.</p>
+                <label class="switch">
+                    <input type="checkbox" id="marketing-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="modal-buttons">
+                <button id="guardar-preferencias">Guardar preferencias</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="aviso-legal-modal" class="policy-modal">
+        <div class="policy-modal-content">
+            <span class="close-modal">&times;</span>
+            <h1>Aviso Legal</h1>
+            <p>En cumplimiento con la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, a continuación se detallan los datos de información general de este sitio web:</p>
+            <ul>
+                <li><strong>Titular:</strong> [Beatriz Hernández-Capalleja García]</li>
+                <li><strong>Correo electrónico de contacto:</strong> [jose.luis.ms@hotmail.es]</li>
+                <li><strong>Teléfono de contacto:</strong> [657992675]</li>
+                <li><strong>Domicilio:</strong> [Granada]</li>
+            </ul>
+            <p>El acceso a este sitio web implica la aceptación de este Aviso Legal, la Política de Privacidad y la Política de Cookies.</p>
+        </div>
+    </div>
+
+    <div id="privacidad-modal" class="policy-modal">
+        <div class="policy-modal-content">
+            <span class="close-modal">&times;</span>
+            <h1>Política de Privacidad</h1>
+            <p>En cumplimiento con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales (RGPD), le informamos de lo siguiente:</p>
+            
+            <h2>Responsable del Tratamiento</h2>
+            <p><strong>Titular:</strong> [Beatriz Hernández-Capalleja García]</p>
+            <p><strong>Contacto:</strong> [jose.luis.ms@hotmail.es]</p>
+
+            <h2>Finalidad del Tratamiento de Datos</h2>
+            <p>Los datos que nos proporciones serán tratados únicamente para gestionar tu consulta, solicitud o servicio de adiestramiento canino. No se utilizarán para fines de marketing sin tu consentimiento explícito.</p>
+
+            <h2>Legitimación para el Tratamiento</h2>
+            <p>El tratamiento de tus datos se basa en el consentimiento que nos das al contactar con nosotros a través de la web.</p>
+
+            <h2>Derechos de los Usuarios</h2>
+            <p>Tienes derecho a acceder, rectificar, suprimir, limitar el tratamiento, oponerte al tratamiento y a la portabilidad de tus datos. Puedes ejercer estos derechos enviando un correo electrónico a [jose.luis.ms@hotmail.es].</p>
+
+            <h2>Conservación de los Datos</h2>
+            <p>Tus datos se conservarán durante el tiempo necesario para cumplir con la finalidad para la que fueron recabados.</p>
+        </div>
+    </div>
+
+    <div id="cookies-policy-modal" class="policy-modal">
+        <div class="policy-modal-content">
+            <span class="close-modal">&times;</span>
+            <h1>Política de Cookies</h1>
+            <p>Este sitio web utiliza cookies propias y de terceros para mejorar tu experiencia de usuario y ofrecerte servicios adaptados a tus intereses.</p>
+            
+            <h2>¿Qué son las cookies?</h2>
+            <p>Una cookie es un pequeño archivo de texto que un sitio web almacena en tu navegador cuando lo visitas. Permiten que la web recuerde información sobre tu visita, como tu idioma, preferencias o información de sesión.</p>
+            
+            <h2>Tipos de Cookies que Utilizamos</h2>
+            <p>De acuerdo a tu configuración en el banner de cookies, podemos usar:</p>
+            <ul>
+                <li><strong>Cookies Necesarias:</strong> Son esenciales para el funcionamiento básico del sitio y no requieren tu consentimiento. Por ejemplo, para recordar tu elección sobre las cookies.</li>
+                <li><strong>Cookies de Análisis o Rendimiento:</strong> Nos permiten medir el tráfico y el comportamiento de los usuarios en el sitio para mejorar su rendimiento. Se activan solo si las aceptas.</li>
+                <li><strong>Cookies de Publicidad o Marketing:</strong> Sirven para crear perfiles de usuario y mostrarte publicidad personalizada en otros sitios. Se activan solo si las aceptas.</li>
+            </ul>
+            
+            <h2>Control de Cookies</h2>
+            <p>Puedes configurar tus preferencias de cookies en cualquier momento a través del banner que aparece al entrar en la web. Además, puedes configurar tu navegador para bloquear o eliminar cookies.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Efecto suave al hacer clic en enlaces del menú
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                // Si el enlace es a un archivo HTML externo, permite la navegación normal
+                if (this.getAttribute('href').includes('.html')) { 
+                    return; 
+                }
+                
+                // Previene el comportamiento por defecto del ancla
+                e.preventDefault(); 
+                
+                // Obtiene el ID de la sección de destino desde el atributo href
+                const targetId = this.getAttribute('href'); 
+                const targetElement = document.querySelector(targetId); 
+                
+                // Si el elemento de destino existe, desplázate suavemente
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth' 
+                    });
+                }
+            });
+
+            // Opcional: Actualizar la clase 'active' en el menú al hacer scroll
+            window.addEventListener('scroll', () => {
+                const sections = document.querySelectorAll('section');
+                let currentSectionId = '';
+                const nav = document.querySelector('nav'); 
+                const navHeight = nav ? nav.offsetHeight : 0; 
+                const scrollPosition = window.pageYOffset + navHeight + 50;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop; 
+                    const sectionHeight = section.clientHeight;
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        currentSectionId = section.getAttribute('id');
+                    }
+                });
+
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSectionId}` && currentSectionId !== '') {
+                        link.classList.add('active');
+                    }
+                });
+                
+                // Lógica para que el menú "INICIO" se active en la parte superior
+                if (window.pageYOffset < 100) {
+                    document.querySelector('nav a[href="#inicio"]').classList.add('active');
+                }
+            });
+        });
+
+        // --- Lógica de los Modales de Políticas Legales ---
+        document.getElementById('aviso-legal-trigger').addEventListener('click', function() {
+            document.getElementById('aviso-legal-modal').style.display = 'block';
+        });
+
+        document.getElementById('privacidad-trigger').addEventListener('click', function() {
+            document.getElementById('privacidad-modal').style.display = 'block';
+        });
+
+        document.getElementById('cookies-trigger').addEventListener('click', function() {
+            document.getElementById('cookies-policy-modal').style.display = 'block';
+        });
+
+        // Cerrar todos los modales al hacer clic en el botón de cerrar 'x'
+        document.querySelectorAll('.policy-modal .close-modal').forEach(button => {
+            button.addEventListener('click', function() {
+                this.closest('.policy-modal').style.display = 'none';
+            });
+        });
+
+        // Cerrar modales de políticas al hacer clic fuera del contenido
+        window.addEventListener('click', function(event) {
+            document.querySelectorAll('.policy-modal').forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+        
+        // --- Lógica del Banner de Cookies (ACTUALIZADA para RGPD) ---
+        
+        const cookieBanner = document.getElementById('cookies-banner');
+        const cookieConfigModal = document.getElementById('cookies-config-modal');
+        const aceptarBtn = document.getElementById('aceptar-cookies');
+        const rechazarBtn = document.getElementById('rechazar-cookies');
+        const configurarBtn = document.getElementById('configurar-cookies');
+        const cerrarModalBtn = document.querySelector('#cookies-config-modal .close-modal');
+        const guardarPreferenciasBtn = document.getElementById('guardar-preferencias');
+
+        // Función para cargar los scripts de Google Analytics
+        function enableGoogleAnalytics() {
+            // Este código se ejecutará cuando el usuario acepte las cookies de análisis
+            console.log('Google Analytics enabled by user consent.');
+            // Aquí se envía la vista de página si ya se cargó el script gtag.js
+            if (typeof gtag === 'function') {
+                gtag('event', 'page_view', { 'send_to': 'G-S49BGPC3FZ' });
+            }
+        }
+
+        // Función para desactivar Google Analytics
+        function disableGoogleAnalytics() {
+            // Este código se ejecutará si el usuario rechaza las cookies de análisis
+            console.log('Google Analytics disabled by user consent.');
+            window['ga-disable-G-S49BGPC3FZ'] = true;
+        }
+        
+        // Función para guardar las preferencias en el almacenamiento local y gestionar los scripts
+        function saveConsentAndManageScripts(preferences) {
+            localStorage.setItem('cookies-consent', JSON.stringify(preferences));
+            if (preferences.analytics) {
+                enableGoogleAnalytics();
+            } else {
+                disableGoogleAnalytics();
+            }
+            // Aquí puedes añadir lógica para cargar/desactivar scripts de marketing si es necesario
+            cookieBanner.style.display = 'none';
+            cookieConfigModal.style.display = 'none';
+        }
+
+        // Revisar el consentimiento al cargar la página
+        const userConsent = localStorage.getItem('cookies-consent');
+        if (!userConsent) {
+            // Si no hay consentimiento, mostrar el banner y desactivar GA por defecto
+            cookieBanner.style.display = 'flex';
+            disableGoogleAnalytics();
+        } else {
+            // Si ya hay consentimiento, gestionar los scripts según las preferencias guardadas
+            const consentPreferences = JSON.parse(userConsent);
+            if (consentPreferences.analytics) {
+                enableGoogleAnalytics();
+            } else {
+                disableGoogleAnalytics();
+            }
+        }
+
+        // Aceptar todas las cookies
+        aceptarBtn.addEventListener('click', function() {
+            const preferences = {
+                necesarias: true,
+                analytics: true,
+                marketing: true
+            };
+            saveConsentAndManageScripts(preferences);
+        });
+
+        // Rechazar todas las cookies no necesarias
+        rechazarBtn.addEventListener('click', function() {
+            const preferences = {
+                necesarias: true,
+                analytics: false,
+                marketing: false
+            };
+            saveConsentAndManageScripts(preferences);
+        });
+
+        // Abrir modal de configuración
+        configurarBtn.addEventListener('click', function() {
+            cookieConfigModal.style.display = 'block';
+            // Sincronizar el estado del toggle con el consentimiento guardado
+            const consentPreferences = JSON.parse(localStorage.getItem('cookies-consent')) || {};
+            document.getElementById('analytics-toggle').checked = consentPreferences.analytics !== false;
+            document.getElementById('marketing-toggle').checked = consentPreferences.marketing === true;
+        });
+
+        // Cerrar modal de configuración
+        cerrarModalBtn.addEventListener('click', function() {
+            cookieConfigModal.style.display = 'none';
+        });
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.addEventListener('click', function(event) {
+            if (event.target == cookieConfigModal) {
+                cookieConfigModal.style.display = 'none';
+            }
+        });
+
+        // Guardar preferencias desde el modal
+        guardarPreferenciasBtn.addEventListener('click', function() {
+            const analyticsConsent = document.getElementById('analytics-toggle').checked;
+            const marketingConsent = document.getElementById('marketing-toggle').checked;
+            
+            const preferences = {
+                necesarias: true,
+                analytics: analyticsConsent,
+                marketing: marketingConsent
+            };
+
+            saveConsentAndManageScripts(preferences);
+            alert('¡Tus preferencias han sido guardadas!');
+        });
+    </script>
+</body>
+</html>
